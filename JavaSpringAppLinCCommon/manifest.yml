@@ -1,0 +1,9 @@
+---
+applications:
+- instances: 1
+  timeout: 180
+  name: javaspringapplinccommon
+  buildpack: java_buildpack
+  path: ./target/javaspringapp-1.0-SNAPSHOT.jar
+  disk_quota: 1G
+  memory: 1984MB
