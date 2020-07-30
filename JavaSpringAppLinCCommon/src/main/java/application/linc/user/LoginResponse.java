@@ -1,6 +1,23 @@
+/**
+ * 
+ */
 package application.linc.user;
 
-public class UserRegistrationResponse {
+/**
+ * @author 258297
+ *
+ */
+public class LoginResponse {
+	
+	public String status;
+
+	public String getStatus() {
+		return status;
+	}
+
+	public void setStatus(String status) {
+		this.status = status;
+	}
 	
 	public String userId;
 	
@@ -13,8 +30,7 @@ public class UserRegistrationResponse {
 	public void setUserId(String userId) {
 		this.userId = userId;
 	}
-	public String status;
-	
+
 	public String userType;
 
     public String name;
@@ -223,15 +239,5 @@ public class UserRegistrationResponse {
 	public void setLongitude(String longitude) {
 		this.longitude = longitude;
 	}
-
-	public String getStatus() {
-		return status;
-	}
-
-	public void setStatus(String status) {
-		this.status = status;
-	}
-	
-	
 
 }

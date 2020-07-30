@@ -8,10 +8,6 @@ package application.linc.user;
 
  
 
-import java.util.ArrayList;
-
- 
-
 /**
 
 * @author 258297
@@ -37,6 +33,10 @@ public class UserRegistrationRequest {
        public String supplierVolType;
 
        public String serviceList;
+       
+       public String latitude;
+       
+       public String longitude;
 
        /**
 
@@ -205,14 +205,31 @@ public class UserRegistrationRequest {
              this.serviceList = serviceList;
 
        }
-
+       
+       
        /* (non-Javadoc)
 
        * @see java.lang.Object#toString()
 
        */
 
-       @Override
+       public String getLatitude() {
+		return latitude;
+	}
+
+	public void setLatitude(String latitude) {
+		this.latitude = latitude;
+	}
+
+	public String getLongitude() {
+		return longitude;
+	}
+
+	public void setLongitude(String longitude) {
+		this.longitude = longitude;
+	}
+
+	@Override
 
        public String toString() {
 
